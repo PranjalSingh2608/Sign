@@ -37,7 +37,7 @@ class _MyAppState extends State<MyApp> {
               ),
         ),
       ),
-      initialRoute: '/login',
+      initialRoute: '/home',
       routes: {
         MyRoutes.HomeRoute: ((context) => Home_View()),
         MyRoutes.LoginRoute: ((context) => LoginPage()),
