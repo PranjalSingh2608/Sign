@@ -61,6 +61,7 @@ dependencies:
   auto_route: ^5.0.2
   get_it: ^7.2.0
   injectable: ^1.5.4
+  tflite: ^1.1.2
 
 dev_dependencies:
   flutter_test:
