@@ -2,6 +2,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:sign_lang/pages/ResetPassword.dart';
+import 'package:sign_lang/pages/Signup.dart';
+import 'package:sign_lang/pages/login.dart';
 import 'package:sign_lang/utils/routes.dart';
 import 'package:sign_lang/views/Home_view.dart';
 
@@ -26,17 +29,20 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        brightness: Brightness.light,
+        brightness: Brightness.dark,
         primarySwatch: Colors.blue,
         textTheme: GoogleFonts.latoTextTheme(
           Theme.of(context).textTheme.apply(
-                bodyColor: Colors.black,
+                bodyColor: Colors.white,
               ),
         ),
       ),
-      initialRoute: '/home',
+      initialRoute: '/login',
       routes: {
         MyRoutes.HomeRoute: ((context) => Home_View()),
+        MyRoutes.LoginRoute: ((context) => LoginPage()),
+        MyRoutes.ResetpasswordRoute:(context) => ResetPassword(),
+        MyRoutes.SignupRoute:(context) => SignUp(),
       },
     );
   }
